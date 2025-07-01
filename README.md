@@ -1,6 +1,10 @@
 # **YOU WILL NEED TO PROVIDE THE UNPACKED IFS FILE AND OTHER ASSETS YOURSELF**
 <ins>**I WILL NOT BE RESPONSIBLE FOR WHATS DONE WITH THOSE FILES**==</ins>
 
+# Requirements
+- Pillow
+- No need to install something for xml files as its now built into pythin
+
 ## This is a tool to try and help with editing ifs files by showing you its texture atlas
 When running the script you will need to provide where the "texturelist.xml" is
 
