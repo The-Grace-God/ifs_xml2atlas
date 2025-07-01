@@ -1,6 +1,3 @@
-# this is just some code to pull the atlas data from the texturelist.xml from a ifs file to make it easier to turn into a atlas
-# !!! NOTE THIS IS THE CLI BULD THIS WILL NOT MAKE AN IMAGE WITH THE ATLAS DATA 
-
 import xml.etree.ElementTree as ET
 import os
 
@@ -8,7 +5,12 @@ def main():
     file_path = input("Enter the path to the XML file: ").strip().strip('"')
     raw_folder = os.path.basename(os.path.dirname(os.path.dirname(file_path)))
     parent_folder = raw_folder.removesuffix('_ifs')
-    output_lines = []  # Store the atlas data to later save to a file
+    output_lines = []
+
+    output_subdir = f"{parent_folder}_atlas"
+    run_dir = os.path.dirname(os.path.abspath(__file__))
+    output_folder = os.path.join(run_dir, output_subdir)
+    os.makedirs(output_folder, exist_ok=True)
 
     try:
         tree = ET.parse(file_path)
@@ -18,7 +20,6 @@ def main():
         print(msg)
         return
 
-    # Go through each texture and pull its data
     for texture in root.findall('.//texture'):
         size_elem = texture.find('size')
 
@@ -40,7 +41,6 @@ def main():
         print(header)
         output_lines.append(header)
 
-        # Process each <image> under this <texture>
         for image in texture.findall('image'):
             name = image.attrib.get('name', 'Unnamed')
 
@@ -75,8 +75,7 @@ def main():
                     print(error_line)
                     output_lines.append(error_line)
 
-    # Write all data taken from the XML to a file
-    output_path = f"{parent_folder}_Atlas_Data.txt"
+    output_path = os.path.join(output_folder, f"{parent_folder}_Atlas_Data.txt")
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(output_lines))
 
