@@ -12,7 +12,6 @@ When running the script you will need to provide where the "texturelist.xml" is
 This one will only output both in console and in a file the canvas size and where each image goes on the atlas **THIS WILL NOT MAKE A IMAGE BY ITSELF**
 
 ## Regular Build
-**WIP**\
 This is also run in the terminal (despite not saying "CLI" in the name) but instead of outputing where the textures go on the atlas it will try to generate the atlas itself
 
 ## Examples
