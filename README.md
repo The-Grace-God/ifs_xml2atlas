@@ -45,4 +45,4 @@ This is also run in the terminal (despite not saying "CLI" in the name) but inst
 ### Regular version
 ![image](https://github.com/The-Grace-God/ifs_xml2atlas/blob/main/Example/image_2025-07-01_192821219.png?raw=true)\
 Image output\
-![image](https://raw.githubusercontent.com/The-Grace-God/ifs_xml2atlas/refs/heads/main/Example/output.png)\
+![image](https://raw.githubusercontent.com/The-Grace-God/ifs_xml2atlas/refs/heads/main/Example/output.png)
