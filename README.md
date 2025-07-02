@@ -36,7 +36,7 @@ This is also run in the terminal (despite not saying "CLI" in the name) but inst
 `  </texture>`\
 `</texturelist>`\
 \
-[XML File](https://github.com/The-Grace-God/ifs_xml2atlas/blob/main/Example/texturelist.xml)
+[XML File](https://github.com/The-Grace-God/ifs_xml2atlas/blob/main/example_ifs/tex/texturelist.xml)
 
 ### CLI version
 ![image](https://github.com/The-Grace-God/ifs_xml2atlas/blob/main/Example/image_2025-07-01_181639963.png?raw=true)\
