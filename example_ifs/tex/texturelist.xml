@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <texturelist compress="avslz">
   <texture cfg="eeb-" format="argb8888rev" mag_filter="linear" min_filter="linear" name="tex000" wrap_s="clamp" wrap_t="clamp">
-    <size __type="2u16">250 250</size>
+    <size __type="2u16">500 500</size>
     <image name="Image 1">
       <uvrect __type="4u16">2 204 2 204</uvrect>
       <imgrect __type="4u16">0 202 0 202</imgrect>
     </image>
     <image name="Image 2">
-      <uvrect __type="4u16">2 370 36 274</uvrect>
-      <imgrect __type="4u16">0 368 24 272</imgrect>
+      <uvrect __type="4u16">206 576 2 274</uvrect>
+      <imgrect __type="4u16">204 574 0 272</imgrect>
     </image>
     <image name="Image 3">
-      <uvrect __type="4u16">2 406 2 406</uvrect>
-      <imgrect __type="4u16">0 404 0 404</imgrect>
+      <uvrect __type="4u16">2 406 274 680</uvrect>
+      <imgrect __type="4u16">0 404 272 678</imgrect>
     </image>
   </texture>
 </texturelist>
